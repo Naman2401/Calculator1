@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome! To The Calculator</h1>
+    <section class="cal">
+        <table>
+            <tr>
+                <td colspan="5"><input class="but" type="text" id="result" name="result"></td>
+                <td><input type="button" onclick="clr()" value="C" name="clear"></td>
+            </tr>    
+            <tr>
+                <td><input class="but" type="button" value="1" onclick="myFunction(1)" name="cal"></td>
+                <td><input class="but" type="button" value="2" onclick="myFunction(2)" name="cal"></td>
+                <td><input class="but" type="button" value="3" onclick="myFunction(2)" name="cal"></td>
+                <td colspan="3"><input class="but" type="button" value="/" onclick="myFunction('/')" name="cal"></td>
+            </tr>
+            <tr>
+                <td><input class="but" type="button" value="4" onclick="myFunction(4)" name="cal"></td>
+                <td><input class="but" type="button" value="5" onclick="myFunction(5)" name="cal"></td>
+                <td><input class="but" type="button" value="6" onclick="myFunction(6)" name="cal"></td>
+                <td colspan="3"><input class="but" type="button" value="x" onclick="myFunction('x')" name="cal"></td>
+            </tr>
+            <tr>
+                <td><input class="but" type="button" value="7" onclick="myFunction(7)" name="cal"></td>
+                <td><input class="but" type="button" value="8" onclick="myFunction(8)" name="cal"></td>
+                <td><input class="but" type="button" value="9" onclick="myFunction(9)" name="cal"></td>
+                <td colspan="3"><input class="but" type="button" value="+" onclick="myFunction('+')" name="cal"></td>
+            </tr>
+            <tr>
+                <td><input class="but" type="button" value="0" onclick="myFunction(0)" name="cal"></td>
+                <td><input class="but" type="button" value="." onclick="myFunction('.')" name="cal"></td>
+                <td><input class="but" type="button" value="=" onclick="getAns()" name="cal"></td>
+                <td colspan="3"><input class="but" type="button" value="-" onclick="myFunction('-')" name="cal"></td>
+            </tr>
+            <tr>
+                <td><input class="but" type="button" value="-" onclick="myFunction(' ')"></td>
+            </tr>
+        </table>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
