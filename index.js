@@ -9,11 +9,10 @@ function clr(){
     str = "";
 }
 function getAns(){
-    var [a, b, c] = [str.split(" ")];
-    var e = parseInt(a);
-    var d = parseInt(c); 
-    var res = e+d;
-    console.log(e);
-    console.log(b);
-    // document.getElementById("result").value = res;
+    var ans = eval(str);
+    document.getElementById("result").value = ans;
+}
+function del(){
+    str = str.slice(0, str.length - 1);
+    document.getElementById("result").value = str;
 }
